@@ -1,0 +1,59 @@
+@import 'normalize';
+@import 'header';
+
+body{
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    line-height: 26px;
+    background-color: #E5E5E5;
+}
+
+.container{
+    max-width: 1110px;
+    margin: 0 auto;
+}
+
+.element__title{
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 46px;
+    color: #4D533C;
+}
+
+.element__button{
+    button{
+        cursor: pointer;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 18px;
+        text-decoration-line: underline;
+        color: #D4D6D4;
+        background: none;
+        border: none;
+        &:hover{
+            color: #4D533C;
+        }
+    }
+}
+
+.autor{
+    display: flex;
+    max-width: 358px;
+    height: 90px;
+    div{
+        .name__autor{
+            font-weight: bold;
+            font-size: 22px;
+            line-height: 33px;
+            color: #4D533C;
+            margin: 0 0 6px 0;
+        }
+        
+        .position__autor{
+            font-size: 16px;
+            line-height: 24px;
+            color: #152934;
+            margin: 0;
+        }
+    }
+}

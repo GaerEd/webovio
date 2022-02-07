@@ -1,0 +1,116 @@
+.header{
+    max-width: 1441px;
+    background: url(../image/headerBgc.png) 50% no-repeat;
+    padding-top: 24px;
+    padding-bottom: 210px;
+    margin: 0 auto;
+    position: relative;
+    .header__menu{
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 121px;
+        .header__logo{
+            display: flex;
+            align-items: center;
+            img{
+                display: block;
+            }
+        }
+        .header__menu_button{
+            cursor: pointer;
+            background: none;
+            border: none;
+        }
+    }
+
+    .header__content{
+        max-width: 616px;
+        .header__suptitle{
+            font-size: 14px;
+            line-height: 21px;
+            color: #FFFFFF;
+            margin: 0 0 22px 0;
+        }
+        .header__title{
+            font-weight: bold;
+            font-size: 60px;
+            line-height: 74px;
+            color: #FFFFFF;
+            margin: 0 0 22px 0;
+        }
+        .header__text{
+            font-size: 16px;
+            line-height: 26px;
+            color: #FFFFFF;
+            margin: 0 0 45px 0;
+        }
+        .header__button{
+            button{
+                cursor: pointer;
+                font-size: 16px;
+                line-height: 18px;
+                text-decoration-line: underline;
+                color: #FFD723;
+                background: none;
+                border: 0;
+            }
+        }
+        .client{
+            position: absolute;
+            padding: 60px 166px 54px 65px;
+            background: #FFFFFF;
+            box-shadow: 50px 50px 100px rgba(0, 0, 0, 0.145947);
+            border-radius: 2px;
+            right: 0;
+            bottom: -103px;
+            img{
+                &:not(:last-child){
+                    margin-right: 66px;
+                }
+            }
+        }
+    }
+}
+
+.strategy{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    width: 100%;
+    height: 644px;
+    padding-bottom: 150px;
+    border-bottom: 1px solid rgba(33, 56, 66, 0.0955529);;
+    .strategy__content{
+        max-width: 475px;
+        margin-right: 160px;
+        .strategy__suptitle{
+            font-size: 14px;
+            line-height: 21px;
+            color: rgba(77, 83, 60, 0.9);
+            margin-bottom: 0 0 29px 0;
+        }
+        .strategy__title{
+            margin: 0 0 35px 0;
+        }
+        .strategy__text{
+            font-style: italic;
+            font-size: 16px;
+            line-height: 26px;
+            color: rgba(33, 56, 66, 0.6);
+            margin: 0 0 42px 0;
+        }
+    }
+
+    .strategy__about_us{
+        max-width: 474px;
+        padding: 244px 8px 20px 40px;
+        box-sizing: border-box;
+        background: #FFFFFF;
+        box-shadow: 0px 100px 100px rgba(0, 0, 0, 0.145947);
+        .strategy__description{
+            font-size: 24px;
+            line-height: 40px;
+            color: #4D533C;
+        }
+    }
+}
