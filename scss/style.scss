@@ -1,5 +1,4 @@
 @import 'normalize';
-@import 'header';
 
 body{
     font-family: 'Poppins', sans-serif;
@@ -20,6 +19,13 @@ body{
     color: #4D533C;
 }
 
+.element__text{
+    font-size: 16px;
+    line-height: 26px;
+    color: rgba(33, 56, 66, 0.6);
+    margin: 0 0 24px 0;
+}
+
 .element__button{
     button{
         cursor: pointer;
@@ -34,6 +40,10 @@ body{
             color: #4D533C;
         }
     }
+}
+
+button{
+    background: none;
 }
 
 .autor{
@@ -54,6 +64,257 @@ body{
             line-height: 24px;
             color: #152934;
             margin: 0;
+        }
+    }
+}
+
+.block__size{
+    width: 453px;
+    height: 243px;
+    padding: 30px;
+    box-sizing: border-box;
+    background: #FFFFFF;
+    box-shadow: 50px 50px 100px rgba(0, 0, 0, 0.145947);
+    border-radius: 8px;
+}
+
+
+
+
+
+
+.header{
+    max-width: 1441px;
+    background: url(../image/headerBgc.png) 50% no-repeat;
+    padding-top: 24px;
+    padding-bottom: 210px;
+    margin: 0 auto;
+    position: relative;
+    .header__menu{
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 121px;
+        .header__logo{
+            display: flex;
+            align-items: center;
+            img{
+                display: block;
+            }
+        }
+        .header__menu_button{
+            cursor: pointer;
+            background: none;
+            border: none;
+        }
+    }
+
+    .header__content{
+        max-width: 616px;
+        .header__suptitle{
+            font-size: 14px;
+            line-height: 21px;
+            color: #FFFFFF;
+            margin: 0 0 22px 0;
+        }
+        .header__title{
+            font-weight: bold;
+            font-size: 60px;
+            line-height: 74px;
+            color: #FFFFFF;
+            margin: 0 0 22px 0;
+        }
+        .header__text{
+            font-size: 16px;
+            line-height: 26px;
+            color: #FFFFFF;
+            margin: 0 0 45px 0;
+        }
+        .header__button{
+            button{
+                cursor: pointer;
+                font-weight: 700;
+                font-size: 16px;
+                line-height: 18px;
+                text-decoration-line: underline;
+                color: #FFD723;
+                background: none;
+                border: 0;
+            }
+        }
+        .client{
+            position: absolute;
+            padding: 60px 166px 54px 65px;
+            background: #FFFFFF;
+            box-shadow: 50px 50px 100px rgba(0, 0, 0, 0.145947);
+            border-radius: 2px;
+            right: 0;
+            bottom: -103px;
+            img{
+                &:not(:last-child){
+                    margin-right: 66px;
+                }
+            }
+        }
+    }
+}
+
+.strategy{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    width: 100%;
+    height: 644px;
+    padding-bottom: 150px;
+    .strategy__content{
+        max-width: 475px;
+        margin-right: 160px;
+        .strategy__suptitle{
+            font-size: 14px;
+            line-height: 21px;
+            color: rgba(77, 83, 60, 0.9);
+            margin-bottom: 0 0 29px 0;
+        }
+        .strategy__title{
+            max-width: 474px;
+            margin: 0 0 35px 0;
+        }
+        .strategy__text{
+            margin: 0 0 42px 0;
+        }
+    }
+
+    .strategy__about_us{
+        max-width: 474px;
+        padding: 244px 8px 20px 40px;
+        box-sizing: border-box;
+        background: #FFFFFF;
+        box-shadow: 0px 100px 100px rgba(0, 0, 0, 0.145947);
+        .strategy__description{
+            font-style: italic;
+            font-size: 24px;
+            line-height: 40px;
+            color: #4D533C;
+        }
+    }
+}
+
+.main{
+    margin-top: 150px;
+    padding-bottom: 150px;
+    .main__project{
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        margin-bottom: 110px;
+        .project__title{
+            max-width: 325px;
+            margin-right: 133px;
+        }
+        .project__description{
+            font-style: italic;
+            max-width: 518px;
+        }
+    }
+
+    .main__section{
+        max-width: 1440px;
+        margin: 0 auto;
+        display: flex;
+        align-items: center;
+        &:not(:last-child){
+            margin-bottom: 100px;
+        }
+        .main__img_left{
+            width: 775px;
+            height: 615px;
+            position: relative;
+            background: url(../image/Balenciaga.png) center no-repeat;
+            margin-right: 90px;
+            img{
+                height: auto;
+            }
+            .main__review{
+                position: absolute;
+                right: -40px;
+                bottom: -35px;
+            }
+        }
+        .main__img_right{
+            width: 775px;
+            height: 615px;
+            position: relative;
+            background: url(../image/3dModel.png) center no-repeat;
+            margin-left: 58px;
+            img{
+                height: auto;
+            }
+            .main__review{
+                position: absolute;
+                left: -40px;
+                bottom: -35px;
+            }
+        }
+        .last__element{
+            background: url(../image/Booking.png) center no-repeat;
+        }
+    }
+
+    .main__descriprion{
+        max-width: 470px;
+        .main__title{
+            margin: 0 0 24px 0;
+        }
+        .main__text{
+            margin: 0 0 90px 0;
+        }
+    }
+}
+
+.idea{
+    border-top: 1px solid rgba(33, 56, 66, 0.0955529);
+    padding-top: 150px;
+    .idea__title{
+        font-weight: bold;
+        font-size: 36px;
+        line-height: 46px;
+        color: #4D533C;
+        margin: 0 0 60px 0;
+    }
+    .idea__block{
+        display: flex;
+        justify-content: space-between;
+        .idea__item{
+            padding: 30px;
+            box-sizing: border-box;
+            width: 255px;
+            height: 309px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            .idea__item__title{
+                font-weight: 500;
+                font-size: 24px;
+                line-height: 34px;
+                text-transform: uppercase;
+                color: #4D533C;
+                margin: 0 0 20px 0;
+            }
+            .idea__item__text{
+                font-size: 14px;
+                line-height: 26px;
+                color: rgba(33, 56, 66, 0.6);
+            }
+            .idea__item__button{
+                button{
+                    font-size: 16px;
+                    line-height: 18px;
+                    color: #D4D6D4;
+                    border: 0;
+                    &:hover{
+                        color: #FFD723;
+                    }
+                }
+            }
         }
     }
 }

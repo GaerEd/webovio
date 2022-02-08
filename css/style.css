@@ -337,6 +337,82 @@ template {
   display: none;
 }
 
+body {
+  font-family: 'Poppins', sans-serif;
+  font-size: 16px;
+  line-height: 26px;
+  background-color: #E5E5E5;
+}
+
+.container {
+  max-width: 1110px;
+  margin: 0 auto;
+}
+
+.element__title {
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 46px;
+  color: #4D533C;
+}
+
+.element__text {
+  font-size: 16px;
+  line-height: 26px;
+  color: rgba(33, 56, 66, 0.6);
+  margin: 0 0 24px 0;
+}
+
+.element__button button {
+  cursor: pointer;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 18px;
+  text-decoration-line: underline;
+  color: #D4D6D4;
+  background: none;
+  border: none;
+}
+
+.element__button button:hover {
+  color: #4D533C;
+}
+
+button {
+  background: none;
+}
+
+.autor {
+  display: flex;
+  max-width: 358px;
+  height: 90px;
+}
+
+.autor div .name__autor {
+  font-weight: bold;
+  font-size: 22px;
+  line-height: 33px;
+  color: #4D533C;
+  margin: 0 0 6px 0;
+}
+
+.autor div .position__autor {
+  font-size: 16px;
+  line-height: 24px;
+  color: #152934;
+  margin: 0;
+}
+
+.block__size {
+  width: 453px;
+  height: 243px;
+  padding: 30px;
+  box-sizing: border-box;
+  background: #FFFFFF;
+  box-shadow: 50px 50px 100px rgba(0, 0, 0, 0.145947);
+  border-radius: 8px;
+}
+
 .header {
   max-width: 1441px;
   background: url(../image/headerBgc.png) 50% no-repeat;
@@ -395,6 +471,7 @@ template {
 
 .header .header__content .header__button button {
   cursor: pointer;
+  font-weight: 700;
   font-size: 16px;
   line-height: 18px;
   text-decoration-line: underline;
@@ -424,7 +501,6 @@ template {
   width: 100%;
   height: 644px;
   padding-bottom: 150px;
-  border-bottom: 1px solid rgba(33, 56, 66, 0.0955529);
 }
 
 .strategy .strategy__content {
@@ -440,14 +516,11 @@ template {
 }
 
 .strategy .strategy__content .strategy__title {
+  max-width: 474px;
   margin: 0 0 35px 0;
 }
 
 .strategy .strategy__content .strategy__text {
-  font-style: italic;
-  font-size: 16px;
-  line-height: 26px;
-  color: rgba(33, 56, 66, 0.6);
   margin: 0 0 42px 0;
 }
 
@@ -460,62 +533,147 @@ template {
 }
 
 .strategy .strategy__about_us .strategy__description {
+  font-style: italic;
   font-size: 24px;
   line-height: 40px;
   color: #4D533C;
 }
 
-body {
-  font-family: 'Poppins', sans-serif;
-  font-size: 16px;
-  line-height: 26px;
-  background-color: #E5E5E5;
+.main {
+  margin-top: 150px;
+  padding-bottom: 150px;
 }
 
-.container {
-  max-width: 1110px;
+.main .main__project {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  margin-bottom: 110px;
+}
+
+.main .main__project .project__title {
+  max-width: 325px;
+  margin-right: 133px;
+}
+
+.main .main__project .project__description {
+  font-style: italic;
+  max-width: 518px;
+}
+
+.main .main__section {
+  max-width: 1440px;
   margin: 0 auto;
+  display: flex;
+  align-items: center;
 }
 
-.element__title {
+.main .main__section:not(:last-child) {
+  margin-bottom: 100px;
+}
+
+.main .main__section .main__img_left {
+  width: 775px;
+  height: 615px;
+  position: relative;
+  background: url(../image/Balenciaga.png) center no-repeat;
+  margin-right: 90px;
+}
+
+.main .main__section .main__img_left img {
+  height: auto;
+}
+
+.main .main__section .main__img_left .main__review {
+  position: absolute;
+  right: -40px;
+  bottom: -35px;
+}
+
+.main .main__section .main__img_right {
+  width: 775px;
+  height: 615px;
+  position: relative;
+  background: url(../image/3dModel.png) center no-repeat;
+  margin-left: 58px;
+}
+
+.main .main__section .main__img_right img {
+  height: auto;
+}
+
+.main .main__section .main__img_right .main__review {
+  position: absolute;
+  left: -40px;
+  bottom: -35px;
+}
+
+.main .main__section .last__element {
+  background: url(../image/Booking.png) center no-repeat;
+}
+
+.main .main__descriprion {
+  max-width: 470px;
+}
+
+.main .main__descriprion .main__title {
+  margin: 0 0 24px 0;
+}
+
+.main .main__descriprion .main__text {
+  margin: 0 0 90px 0;
+}
+
+.idea {
+  border-top: 1px solid rgba(33, 56, 66, 0.0955529);
+  padding-top: 150px;
+}
+
+.idea .idea__title {
   font-weight: bold;
   font-size: 36px;
   line-height: 46px;
   color: #4D533C;
+  margin: 0 0 60px 0;
 }
 
-.element__button button {
-  cursor: pointer;
-  font-weight: 700;
+.idea .idea__block {
+  display: flex;
+  justify-content: space-between;
+}
+
+.idea .idea__block .idea__item {
+  padding: 30px;
+  box-sizing: border-box;
+  width: 255px;
+  height: 309px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.idea .idea__block .idea__item .idea__item__title {
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 34px;
+  text-transform: uppercase;
+  color: #4D533C;
+  margin: 0 0 20px 0;
+}
+
+.idea .idea__block .idea__item .idea__item__text {
+  font-size: 14px;
+  line-height: 26px;
+  color: rgba(33, 56, 66, 0.6);
+}
+
+.idea .idea__block .idea__item .idea__item__button button {
   font-size: 16px;
   line-height: 18px;
-  text-decoration-line: underline;
   color: #D4D6D4;
-  background: none;
-  border: none;
+  border: 0;
 }
 
-.element__button button:hover {
-  color: #4D533C;
-}
-
-.autor {
-  display: flex;
-  max-width: 358px;
-  height: 90px;
-}
-
-.autor div .name__autor {
-  font-weight: bold;
-  font-size: 22px;
-  line-height: 33px;
-  color: #4D533C;
-  margin: 0 0 6px 0;
-}
-
-.autor div .position__autor {
-  font-size: 16px;
-  line-height: 24px;
-  color: #152934;
-  margin: 0;
+.idea .idea__block .idea__item .idea__item__button button:hover {
+  color: #FFD723;
 }
